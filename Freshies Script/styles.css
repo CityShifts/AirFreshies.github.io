@@ -1,0 +1,220 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  padding: 20px;
+}
+
+.af-container {
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 40px;
+  width: 100%;
+  max-width: 600px;
+  text-align: center; /* Ensure all text inside is centered */
+  margin: 0 auto; /* Center the container */
+}
+
+.af-designer-area {
+  display: inline-block;
+  width: 494px;
+  height: 494px;
+  background-color: #ffffff;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 100px;
+}
+
+/* Desktop Styles */
+@media (min-width: 601px) {
+  .af-designer-area {
+    position: absolute;
+    top: 810px; /* Move the image 10 inches (960px) down */
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+  .af-designer-area {
+    position: relative; /* Change to relative for better mobile control */
+    width: 100%;
+    max-width: 494px;
+    height: 494px;
+    margin-bottom: 50px; /* Adjust if needed */
+  }
+}
+
+#af-background-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: 2;
+  object-fit: cover; /* Ensures the image covers the container */
+}
+
+@media (max-width: 600px) {
+  #af-background-image {
+    width: 100%; /* Ensure it fills the full width */
+    height: 100%; /* Ensure it fills the container height */
+    object-fit: cover; /* Ensure the image covers the container */
+  }
+}
+
+#af-background-image {
+  width: 100%; /* Ensure the cutout image fits within the preview container */
+  height: 100%; /* Ensure the cutout image fits within the preview container */
+  object-fit: contain; /* Scales the cutout image to fit within its container */
+  z-index: 2;
+}
+
+@media (max-width: 600px) {
+  #af-background-image {
+    width: 104%; /* Make the image slightly larger */
+    height: 102%; /* Make the image slightly larger */
+    object-fit: cover; /* Ensure the image covers the container */
+    z-index: 2;
+  }
+}
+
+#uploaded-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the uploaded image */
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the uploaded image fills the background */
+  z-index: 1; /* Ensure it's behind the cutout image */
+  opacity: 0.8; /* Adjust transparency if needed */
+}
+
+input[type="file"],
+input[type="color"] {
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  margin: 10px 0;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 300px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="file"]:hover,
+input[type="color"]:hover {
+  background-color: #e0e0e0;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 8px;
+  background: #007bff;
+  border-radius: 5px;
+  outline: none;
+  transition: background 0.3s;
+  margin: 10px auto; /* Center-align the slider */
+  width: 80%; /* Limit width to make the slider look more aligned */
+}
+
+input[type="range"]:focus {
+  background: #0056b3;
+}
+
+input[type="range"]::-webkit-slider-thumb,
+input[type="range"]::-moz-range-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #007bff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button {
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 150px;
+  margin: 20px 0;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+  .af-container {
+    padding: 20px;
+  }
+
+  .af-designer-area {
+    height: 300px;
+    margin-bottom: 50px; /* Adjust for smaller screens */
+  }
+
+  input[type="range"] {
+    margin: 10px 0;
+    width: 90%; /* Adjust slider for smaller screen */
+  }
+
+  button {
+    width: 100%;
+  }
+
+  /* Center buttons and inputs in mobile view */
+  input[type="file"],
+  input[type="color"],
+  button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .af-container {
+    padding: 15px;
+  }
+
+  .af-designer-area {
+    width: 100%;
+    height: 300px; /* Further reduce height for very small screens */
+  }
+
+  input[type="file"],
+  input[type="color"],
+  button {
+    width: 100%;
+  }
+}
