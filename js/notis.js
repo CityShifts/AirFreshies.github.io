@@ -15,12 +15,12 @@
         
         
             var r_map = new Array ();
-        r_map[0] = "https://cdn.discordapp.com/attachments/1285658273202307185/1332793291120443452/Air_Freshies-jpg_1_1.png?ex=67968bfa&is=67953a7a&hm=0384bb5da75cbc8f181b290ce68b6d3b0f84eab6fa1a45eed2e64c4833a28cb1&";
-        r_map[1] = "https://cdn.discordapp.com/attachments/1285658273202307185/1332793291120443452/Air_Freshies-jpg_1_1.png?ex=67968bfa&is=67953a7a&hm=0384bb5da75cbc8f181b290ce68b6d3b0f84eab6fa1a45eed2e64c4833a28cb1&";
-        r_map[2] = "https://cdn.discordapp.com/attachments/1285658273202307185/1332793291120443452/Air_Freshies-jpg_1_1.png?ex=67968bfa&is=67953a7a&hm=0384bb5da75cbc8f181b290ce68b6d3b0f84eab6fa1a45eed2e64c4833a28cb1&";
-        r_map[4] = "https://cdn.discordapp.com/attachments/1285658273202307185/1332793291120443452/Air_Freshies-jpg_1_1.png?ex=67968bfa&is=67953a7a&hm=0384bb5da75cbc8f181b290ce68b6d3b0f84eab6fa1a45eed2e64c4833a28cb1&";
-        r_map[5] = "https://cdn.discordapp.com/attachments/1285658273202307185/1332793291120443452/Air_Freshies-jpg_1_1.png?ex=67968bfa&is=67953a7a&hm=0384bb5da75cbc8f181b290ce68b6d3b0f84eab6fa1a45eed2e64c4833a28cb1&";
-        r_map[6] = "https://cdn.discordapp.com/attachments/1285658273202307185/1332793291120443452/Air_Freshies-jpg_1_1.png?ex=67968bfa&is=67953a7a&hm=0384bb5da75cbc8f181b290ce68b6d3b0f84eab6fa1a45eed2e64c4833a28cb1&";
+        r_map[0] = "https://i.imgur.com/zOlmhmC.png";
+        r_map[1] = "https://i.imgur.com/zOlmhmC.png";
+        r_map[2] = "https://i.imgur.com/zOlmhmC.png";
+        r_map[4] = "https://i.imgur.com/zOlmhmC.png";
+        r_map[5] = "https://i.imgur.com/zOlmhmC.png";
+        r_map[6] = "https://i.imgur.com/zOlmhmC.png";
         
          
         var r_product = new Array ();
