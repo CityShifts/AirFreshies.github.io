@@ -24,7 +24,8 @@
         
          
         var r_product = new Array ();
-        r_product[0] = "Your Design On A Scented Air Freshener";
+        r_product[0] = "Personalised Air Freshener";
+        r_product[1] = "Custom Spotify Air Freshener";
 
              setInterval(function(){ $(".custom-social-proof").stop().slideToggle('slow'); }, 3000);
               $(".custom-close").click(function() {
