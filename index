@@ -48,7 +48,7 @@
 <section class="banner" style="background: #BFEFFF; padding: 40px 20px; text-align: center; font-family: Arial, sans-serif; box-sizing: border-box;">
     <h2 style="color: #0277BD;">Custom made Air Freshies. Fresh for your ride!</h2>
     <p style="color: #01579B; font-size: 18px;">You tell us what design you would like. And we turn them into custom air fresheners for your car!</p>
-    <a href="designer">
+    <a href="design-tool">
         <button style="background: #0277BD; color: white; padding: 10px 20px; border: none; border-radius: 20px; cursor: pointer; font-size: 16px;">Design A Freshie</button>
     </a>
 </section>
